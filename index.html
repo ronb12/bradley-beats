@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bradley Beats Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="beats-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Prototype 11 • Smart station music app</p>
+          <h1>Bradley Beats</h1>
+          <p>
+            A clean station-based music experience with mood channels, premium playlists,
+            and attribution-ready royalty-free track metadata. This prototype uses demo
+            metadata only until licensed music sources are approved.
+          </p>
+          <div class="hero-actions" aria-label="Bradley Beats actions">
+            <button class="primary-action" type="button" data-action="play">Start Listening</button>
+            <button class="secondary-action" type="button" data-action="next">Shuffle Station</button>
+          </div>
+        </div>
+        <aside class="player">
+          <div class="player-top">
+            <div class="disc" aria-hidden="true"></div>
+            <div>
+              <p>Now Playing</p>
+              <h2 id="trackTitle">Blue Horizon</h2>
+              <span id="trackMeta">Demo instrumental slot - add license details before launch</span>
+            </div>
+          </div>
+          <div class="meter"><i></i></div>
+          <div class="player-stats" aria-label="Track stats">
+            <span>Clean Mix</span>
+            <span>Royalty-Free Ready</span>
+            <span>320 kbps</span>
+          </div>
+          <div class="controls">
+            <button type="button" data-action="previous">Prev</button>
+            <button class="play" type="button" data-action="play">Play</button>
+            <button type="button" data-action="next">Next</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="mood-bar" aria-label="Mood filters">
+        <button type="button">Focus</button>
+        <button type="button">Workout</button>
+        <button type="button">Kids</button>
+        <button type="button">Drive</button>
+        <button type="button">Wellness</button>
+      </section>
+
+      <section class="stations" aria-label="Stations">
+        <button class="station active" type="button" data-title="Blue Horizon" data-meta="Source candidate: approved royalty-free electronic or original generated loop">
+          <small>Featured Station</small>
+          <b>Focus Flow</b>
+          <span>Lo-fi, study, coding, calm productivity</span>
+        </button>
+        <button class="station" type="button" data-title="Silver Bounce" data-meta="Source candidate: royalty-free upbeat instrumental">
+          <small>Family Clean</small>
+          <b>Kid Energy</b>
+          <span>Clean, bright, playful, high-energy</span>
+        </button>
+        <button class="station" type="button" data-title="Midnight Chrome" data-meta="Source candidate: commercial-safe Creative Commons track with verified attribution">
+          <small>Late Night</small>
+          <b>Drive Mode</b>
+          <span>Smooth car ride electronic station</span>
+        </button>
+        <button class="station" type="button" data-title="White Noise Reset" data-meta="Source candidate: approved audio library or in-house ambient loop">
+          <small>Calm</small>
+          <b>Wellness</b>
+          <span>Soft ambient music for rest and journaling</span>
+        </button>
+      </section>
+
+      <section class="license">
+        <div>
+          <h2>Launch-Ready Music Records</h2>
+          <p>Track source URL, artist, license name, commercial-use permission, attribution text, download date, and proof screenshot/link.</p>
+        </div>
+        <a href="#" aria-label="View music source checklist">Source Checklist</a>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
