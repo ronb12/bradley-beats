@@ -13,12 +13,12 @@
     <main class="beats-shell">
       <section class="hero">
         <div>
-          <p class="eyebrow">Prototype 11 • Smart station music app</p>
+          <p class="eyebrow">Frontend Differentiation Pass</p>
           <h1>Bradley Beats</h1>
           <p>
-            A clean station-based music experience with mood channels, premium playlists,
-            and attribution-ready royalty-free track metadata. This prototype uses demo
-            metadata only until licensed music sources are approved.
+            A station-based music app rebuilt to feel like a real media product:
+            play from the home shelf, manage stations, save favorites in your
+            library, and keep a separate licensing workflow before launch.
           </p>
           <div class="hero-actions" aria-label="Bradley Beats actions">
             <button class="primary-action" type="button" data-action="play">Start Listening</button>
@@ -48,44 +48,14 @@
         </aside>
       </section>
 
-      <section class="mood-bar" aria-label="Mood filters">
-        <button type="button">Focus</button>
-        <button type="button">Workout</button>
-        <button type="button">Kids</button>
-        <button type="button">Drive</button>
-        <button type="button">Wellness</button>
-      </section>
+      <nav class="subnav" aria-label="Bradley Beats views">
+        <button class="subnav-tab active" type="button" data-tab="home">Home</button>
+        <button class="subnav-tab" type="button" data-tab="stations">Stations</button>
+        <button class="subnav-tab" type="button" data-tab="library">Library</button>
+        <button class="subnav-tab" type="button" data-tab="licensing">Licensing</button>
+      </nav>
 
-      <section class="stations" aria-label="Stations">
-        <button class="station active" type="button" data-title="Blue Horizon" data-meta="Source candidate: approved royalty-free electronic or original generated loop">
-          <small>Featured Station</small>
-          <b>Focus Flow</b>
-          <span>Lo-fi, study, coding, calm productivity</span>
-        </button>
-        <button class="station" type="button" data-title="Silver Bounce" data-meta="Source candidate: royalty-free upbeat instrumental">
-          <small>Family Clean</small>
-          <b>Kid Energy</b>
-          <span>Clean, bright, playful, high-energy</span>
-        </button>
-        <button class="station" type="button" data-title="Midnight Chrome" data-meta="Source candidate: commercial-safe Creative Commons track with verified attribution">
-          <small>Late Night</small>
-          <b>Drive Mode</b>
-          <span>Smooth car ride electronic station</span>
-        </button>
-        <button class="station" type="button" data-title="White Noise Reset" data-meta="Source candidate: approved audio library or in-house ambient loop">
-          <small>Calm</small>
-          <b>Wellness</b>
-          <span>Soft ambient music for rest and journaling</span>
-        </button>
-      </section>
-
-      <section class="license">
-        <div>
-          <h2>Launch-Ready Music Records</h2>
-          <p>Track source URL, artist, license name, commercial-use permission, attribution text, download date, and proof screenshot/link.</p>
-        </div>
-        <a href="#" aria-label="View music source checklist">Source Checklist</a>
-      </section>
+      <section id="app" class="app-shell" aria-live="polite"></section>
     </main>
     <script src="./app.js"></script>
   </body>
